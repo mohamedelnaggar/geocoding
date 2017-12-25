@@ -6,9 +6,16 @@ import org.apache.camel.model.rest.RestParamType;
 import org.springframework.stereotype.Component;
 
 
+/**
+ * apache camel component that creates th rest and integrate with google coding out of the box
+ */
 @Component
 public class CamelGeocoderRoute extends RouteBuilder{
 
+    /**
+     * rest request used to get address information
+     * @throws Exception
+     */
     @Override
     public void configure() throws Exception {
 

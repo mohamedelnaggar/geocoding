@@ -4,7 +4,9 @@ import com.google.code.geocoder.model.GeocoderGeometry;
 
 import java.io.Serializable;
 
-
+/**
+ * The camel geo model which contains custom response
+ */
 public class CamelGeoModel implements Serializable {
 
     private String formattedAddress;

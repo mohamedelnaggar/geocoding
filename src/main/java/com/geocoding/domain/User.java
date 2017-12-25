@@ -6,6 +6,9 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.Set;
 
+/**
+ * The user entity
+ */
 @Entity
 public class User {
 
