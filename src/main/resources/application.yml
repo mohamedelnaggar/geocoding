@@ -1,49 +1,8 @@
-#data source properties
 spring:
-  datasource:
-    url: jdbc:h2:mem:spring_boot_oauth2
-    username:
-    password:
-    dataSourceClassName: org.h2.jdbcx.JdbcDataSource
-    schema: classpath:/sql/schema.sql
-    data: classpath:/sql/data.sql
-  jpa:
-      database-platform: org.hibernate.dialect.H2Dialect
-      database: H2
-      openInView: false
-      show_sql: true
-      generate-ddl: false
-      hibernate:
-        ddl-auto: none
-
-#web server
-server:
-  port: 8080
-  contextPath: /api
-
-#Application specific
-authentication:
-  oauth:
-    clientid: geoapp
-    secret: secret
-    tokenValidityInSeconds: 1800
-
-#Camel
-camel:
-  springboot:
-    name: Geocoder
-  rest:
-    component: servlet
-    port: 8080
-    host: localhost
-    context-path: /camel
-    enable-cors: true
-    binding-mode: json
-    data-format-property:
-      prettyPrint: true
-    api-context-path: /api-doc
-    api-property:
-#      cors: true
-      api:
-        title: Geocoder API
-        version: 1.0.0
+  application:
+    name: Camel Geo Coder
+  profiles:
+    # The commented value for `active` can be replaced with valid Spring profiles to load.
+    # Otherwise, it will be filled in by maven when building the WAR file
+    # Either way, it can be overridden by `--spring.profiles.active` value passed in the commandline or `-Dspring.profiles.active` set in `JAVA_OPTS`
+    active: #spring.profiles.active#
