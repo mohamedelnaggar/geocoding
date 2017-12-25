@@ -28,6 +28,12 @@ authentication:
     secret: secret
     tokenValidityInSeconds: 1800
 
+# avoid return login page by oauth2
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+
 #Camel
 camel:
   springboot:

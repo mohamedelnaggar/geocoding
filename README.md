@@ -20,7 +20,7 @@ docker run -p 8080:8080 -t springio/geocoder-app
 
 ### Fetching access_token
 ```java
-curl -vu geoapp:secret 'http://localhost:8080/oauth/token?username=admin&password=admin&grant_type=password'
+curl -vu geoapp:secret 'http://localhost:8080/api/oauth/token?username=admin&password=admin&grant_type=password'
 ```
 
 
