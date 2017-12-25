@@ -1,0 +1,12 @@
+
+${AnsiColor.RED}   _____          __  __ ______ _       ${AnsiColor.GREEN}  _____ ______ ____     _____ ____  _____  ______ _____
+${AnsiColor.RED}  / ____|   /\   |  \/  |  ____| |      ${AnsiColor.GREEN} / ____|  ____/ __ \   / ____/ __ \|  __ \|  ____|  __ \
+${AnsiColor.RED} | |       /  \  | \  / | |__  | |      ${AnsiColor.GREEN}| |  __| |__ | |  | | | |   | |  | | |  | | |__  | |__) |
+${AnsiColor.RED} | |      / /\ \ | |\/| |  __| | |      ${AnsiColor.GREEN}| | |_ |  __|| |  | | | |   | |  | | |  | |  __| |  _  /
+${AnsiColor.RED} | |____ / ____ \| |  | | |____| |____  ${AnsiColor.GREEN}| |__| | |___| |__| | | |___| |__| | |__| | |____| | \ \
+${AnsiColor.RED}  \_____/_/    \_\_|  |_|______|______| ${AnsiColor.GREEN} \_____|______\____/   \_____\____/|_____/|______|_|  \_\
+
+
+
+edit message from here  http://patorjk.com/software/taag/#p=display&f=Big&t=CAMEL%20GEO%20CODER
+
