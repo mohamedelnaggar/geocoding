@@ -7,6 +7,7 @@
     <groupId>geocoder-app</groupId>
     <artifactId>geocoder-app</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
 
     <parent>
@@ -23,6 +24,7 @@
         <java.version>1.8</java.version>
         <spring-security-oauth2.version>2.0.3.RELEASE</spring-security-oauth2.version>
         <logstash-logback-encoder.version>4.7</logstash-logback-encoder.version>
+        <docker.image.prefix>springio</docker.image.prefix>
     </properties>
 
 
@@ -167,6 +169,31 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.3.6</version>
+                <configuration>
+                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
             </plugin>
 
 
