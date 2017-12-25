@@ -28,3 +28,14 @@ curl -vu geoapp:secret 'http://localhost:8080/api/oauth/token?username=admin&pas
 ```java
 curl -i -H "Authorization: Bearer <access_token>" http://localhost:8080/api/camel/geocoder/?address=Paris
 ```
+
+## To stop application
+```java
+docker ps
+```
+
+Then
+
+```java
+docker stop <CONTAINER_ID>
+```
